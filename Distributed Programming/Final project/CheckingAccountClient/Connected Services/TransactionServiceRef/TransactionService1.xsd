@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SharedLib.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SharedLib.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57913/TransactionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SharedLib.Enums" />
+  <xs:complexType name="TransactionList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Transaction" nillable="true" type="tns:Transaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TransactionList" nillable="true" type="tns:TransactionList" />
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transaction" nillable="true" type="tns:Transaction" />
+  <xs:complexType name="Debit">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Transaction">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CheckNo" type="xs:int" />
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SharedLib.Enums" minOccurs="0" name="DebitType" type="q1:DebitTypeEnum" />
+          <xs:element minOccurs="0" name="Fee" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Debit" nillable="true" type="tns:Debit" />
+  <xs:complexType name="Credit">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Transaction">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SharedLib.Enums" minOccurs="0" name="CreditType" type="q2:CreditTypeEnum" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Credit" nillable="true" type="tns:Credit" />
+</xs:schema>

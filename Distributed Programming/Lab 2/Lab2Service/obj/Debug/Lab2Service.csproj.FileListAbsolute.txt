@@ -1,0 +1,5 @@
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\Lab2Service\bin\Lab2Service.dll.config
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\Lab2Service\bin\Lab2Service.dll
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\Lab2Service\bin\Lab2Service.pdb
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\Lab2Service\obj\Debug\Lab2Service.dll
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\Lab2Service\obj\Debug\Lab2Service.pdb

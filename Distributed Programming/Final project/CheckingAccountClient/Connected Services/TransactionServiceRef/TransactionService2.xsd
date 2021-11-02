@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SharedLib.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SharedLib.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="DebitTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Check" />
+      <xs:enumeration value="Cash" />
+      <xs:enumeration value="ATM" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DebitTypeEnum" nillable="true" type="tns:DebitTypeEnum" />
+  <xs:simpleType name="CreditTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Check" />
+      <xs:enumeration value="Cash" />
+      <xs:enumeration value="MoneyOrder" />
+      <xs:enumeration value="Wire" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CreditTypeEnum" nillable="true" type="tns:CreditTypeEnum" />
+</xs:schema>

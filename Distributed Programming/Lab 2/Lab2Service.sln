@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2Service", "Lab2Service\Lab2Service.csproj", "{1491EC1E-8BC2-4D99-A336-05CA52C3EFEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient", "HttpClient\HttpClient.csproj", "{A782DAA9-473C-428E-8688-25F4C9CC675C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1491EC1E-8BC2-4D99-A336-05CA52C3EFEC} = {1491EC1E-8BC2-4D99-A336-05CA52C3EFEC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1491EC1E-8BC2-4D99-A336-05CA52C3EFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1491EC1E-8BC2-4D99-A336-05CA52C3EFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1491EC1E-8BC2-4D99-A336-05CA52C3EFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1491EC1E-8BC2-4D99-A336-05CA52C3EFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A782DAA9-473C-428E-8688-25F4C9CC675C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A782DAA9-473C-428E-8688-25F4C9CC675C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A782DAA9-473C-428E-8688-25F4C9CC675C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A782DAA9-473C-428E-8688-25F4C9CC675C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D1BD061-999A-4420-9DBF-56E12CC893C2}
+	EndGlobalSection
+EndGlobal

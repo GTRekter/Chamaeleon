@@ -1,0 +1,11 @@
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\HttpClient\bin\Debug\HttpClient.exe.config
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\HttpClient\bin\Debug\HttpClient.exe
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\HttpClient\bin\Debug\HttpClient.pdb
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\HttpClient\obj\Debug\HttpClient.exe
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Lab2Service - Start\HttpClient\obj\Debug\HttpClient.pdb
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Code\HttpClient\bin\Debug\HttpClient.exe.config
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Code\HttpClient\bin\Debug\HttpClient.exe
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Code\HttpClient\bin\Debug\HttpClient.pdb
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Code\HttpClient\obj\Debug\HttpClient.csprojAssemblyReference.cache
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Code\HttpClient\obj\Debug\HttpClient.exe
+C:\Users\ivanp\OneDrive\Documents\Courses\University of San Diego\Distributed Programming\Lab 2\Code\HttpClient\obj\Debug\HttpClient.pdb

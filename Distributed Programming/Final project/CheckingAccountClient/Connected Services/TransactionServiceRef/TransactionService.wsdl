@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TransactionService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57913/TransactionService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57913/TransactionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57913/TransactionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SharedLib.Enums" />
+      <xsd:import schemaLocation="http://localhost:57913/TransactionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SharedLib.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITransactionService_AddDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddDebit" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_AddDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_UpdateDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebit" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_UpdateDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_DeleteDebit_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebit" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_DeleteDebit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebitResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_AddCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCredit" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_AddCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_UpdateCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCredit" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_UpdateCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_DeleteCredit_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCredit" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_DeleteCredit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCreditResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetAllTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTransactions" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetAllTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetTransactionsByDateRange_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByDateRange" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetTransactionsByDateRange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsByDateRangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetCreditsByType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditsByType" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetCreditsByType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditsByTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetDebitsByType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebitsByType" />
+  </wsdl:message>
+  <wsdl:message name="ITransactionService_GetDebitsByType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebitsByTypeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITransactionService">
+    <wsdl:operation name="AddDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/AddDebit" message="tns:ITransactionService_AddDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/AddDebitResponse" message="tns:ITransactionService_AddDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/UpdateDebit" message="tns:ITransactionService_UpdateDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/UpdateDebitResponse" message="tns:ITransactionService_UpdateDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/DeleteDebit" message="tns:ITransactionService_DeleteDebit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/DeleteDebitResponse" message="tns:ITransactionService_DeleteDebit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/AddCredit" message="tns:ITransactionService_AddCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/AddCreditResponse" message="tns:ITransactionService_AddCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/UpdateCredit" message="tns:ITransactionService_UpdateCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/UpdateCreditResponse" message="tns:ITransactionService_UpdateCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredit">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/DeleteCredit" message="tns:ITransactionService_DeleteCredit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/DeleteCreditResponse" message="tns:ITransactionService_DeleteCredit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactions">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/GetAllTransactions" message="tns:ITransactionService_GetAllTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/GetAllTransactionsResponse" message="tns:ITransactionService_GetAllTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByDateRange">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/GetTransactionsByDateRange" message="tns:ITransactionService_GetTransactionsByDateRange_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/GetTransactionsByDateRangeResponse" message="tns:ITransactionService_GetTransactionsByDateRange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditsByType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/GetCreditsByType" message="tns:ITransactionService_GetCreditsByType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/GetCreditsByTypeResponse" message="tns:ITransactionService_GetCreditsByType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitsByType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITransactionService/GetDebitsByType" message="tns:ITransactionService_GetDebitsByType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITransactionService/GetDebitsByTypeResponse" message="tns:ITransactionService_GetDebitsByType_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITransactionService" type="tns:ITransactionService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddDebit">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/AddDebit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebit">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/UpdateDebit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebit">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/DeleteDebit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCredit">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/AddCredit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCredit">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/UpdateCredit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCredit">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/DeleteCredit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTransactions">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/GetAllTransactions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionsByDateRange">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/GetTransactionsByDateRange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditsByType">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/GetCreditsByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebitsByType">
+      <soap:operation soapAction="http://tempuri.org/ITransactionService/GetDebitsByType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransactionService">
+    <wsdl:port name="BasicHttpBinding_ITransactionService" binding="tns:BasicHttpBinding_ITransactionService">
+      <soap:address location="http://localhost:57913/TransactionService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

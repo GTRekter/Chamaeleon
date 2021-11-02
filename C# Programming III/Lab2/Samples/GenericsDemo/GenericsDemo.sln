@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsDemo", "GenericsDemo.csproj", "{BC732951-7E43-4584-9019-E222B179D023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC732951-7E43-4584-9019-E222B179D023}.Debug|x86.ActiveCfg = Debug|x86
+		{BC732951-7E43-4584-9019-E222B179D023}.Debug|x86.Build.0 = Debug|x86
+		{BC732951-7E43-4584-9019-E222B179D023}.Release|x86.ActiveCfg = Release|x86
+		{BC732951-7E43-4584-9019-E222B179D023}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
